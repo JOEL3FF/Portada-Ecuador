@@ -1,0 +1,216 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Variables*/
+/*Menu*/
+.navegacion-header {
+  background-color: transparent;
+  font-size: clamp(0.5rem, 2.5vw, 2rem);
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 30% repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+.navegacion-header__paisaje {
+  height: 10vh;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 1s linear;
+}
+.navegacion-header__paisaje:hover {
+  background-color: rgba(0, 0, 0, 0.8117647059);
+}
+.navegacion-header__comida {
+  height: 10vh;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 1s linear;
+}
+.navegacion-header__comida:hover {
+  background-color: rgba(0, 0, 0, 0.8117647059);
+}
+.navegacion-header__cultura {
+  height: 10vh;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 1s linear;
+}
+.navegacion-header__cultura:hover {
+  background-color: rgba(0, 0, 0, 0.8117647059);
+}
+.navegacion-header__menu {
+  height: 10vh;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 1s linear;
+}
+.navegacion-header__menu:hover {
+  background-color: rgba(0, 0, 0, 0.8117647059);
+}
+
+.Portada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background: url(/img/ecuado-fondo\ \(1\)\ \(5\).png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: aliceblue;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 12% 1fr;
+}
+
+.navegacion-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.navegacion-main__paisaje {
+  height: 13vh;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 1s linear;
+  font-size: clamp(0.5rem, 2.5vw, 2rem);
+}
+.navegacion-main__paisaje:hover {
+  background-color: rgb(0, 0, 0);
+}
+.navegacion-main__comida {
+  height: 13vh;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 1s linear;
+  font-size: clamp(0.5rem, 2.5vw, 2rem);
+}
+.navegacion-main__comida:hover {
+  background-color: rgb(0, 0, 0);
+}
+.navegacion-main__cultura {
+  height: 13vh;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 1s linear;
+  font-size: clamp(0.5rem, 2.5vw, 2rem);
+}
+.navegacion-main__cultura:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.folleto {
+  display: grid;
+  grid-template-rows: 30% 1fr;
+}
+.folleto1 {
+  text-align: center;
+  color: aliceblue;
+  font-size: clamp(0.5rem, 2.5vw, 2rem);
+  font-size: clamp(0.4em, 1vw, 3rem);
+}
+.folleto2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  transition: background 2s linear;
+}
+.folleto2-im {
+  width: 90%;
+  height: 100%;
+  border: 4px solid black;
+  transition: border 1s;
+  margin: 1rem 1rem;
+}
+.folleto2-im:hover {
+  border: 4px solid white;
+  opacity: 0.5;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 58% 1fr;
+  font-family: "Anton", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Pacifico", cursive;
+  font-family: "Pangolin", cursive;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-family: "Sigmar", cursive;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: clamp(4rem, 8vw, 10rem);
+  background-color: rgb(29, 30, 30);
+}
+
+/*# sourceMappingURL=style.css.map */
